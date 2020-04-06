@@ -11,10 +11,15 @@ body *{
     font-family: 'Montserrat', sans-serif;
 }
 .content-container{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     height: 100%;
     width: 100%;
 }
@@ -32,10 +37,15 @@ h1.page-title{
     background-color: #fff;
     border: 1px solid #4f4f4f;
     border-radius: 10px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
     background: linear-gradient(168.52deg, #4F4F4F -14.63%, #292929 96.34%);
     box-shadow: -1px -1px 3px rgba(141, 139, 139, 0.25), 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
@@ -58,9 +68,13 @@ h1.page-title{
     height: 400px;
     overflow: auto;
     width: 400px;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: start;
+            align-items: flex-start;
 }
 
 .chat-body::-webkit-scrollbar {
@@ -176,6 +190,7 @@ h1.page-title{
     font-size: 18px;
     color: #ccc;
     cursor: pointer;
+    -webkit-transition: 0.3s all;
     transition: 0.3s all;
 }
 #chat-send:hover{
